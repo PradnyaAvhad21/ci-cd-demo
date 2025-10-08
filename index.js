@@ -1,1 +1,1 @@
-console.log("Hello from CI/CD Demo!")
+console.log('Hello from CI/CD Demo!')
