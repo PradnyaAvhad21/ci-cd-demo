@@ -14,6 +14,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Run index.js
-        run: node index.js
+     - name: Run index.js
+     run: |
+     echo "----- START OUTPUT -----"
+     node index.js | tee /dev/stdout
+     echo "------ END OUTPUT ------"
+
 
