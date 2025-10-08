@@ -1,13 +1,12 @@
 name: Node.js CI
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
-  build:
+  run-node:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -15,8 +14,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run app
+      - name: Run index.js
         run: node index.js
+
