@@ -1,21 +1,14 @@
-name: Node.js CI
+name: Simple Node CI
 
 on: [push]
 
 jobs:
-  run-node:
+  run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
+      - name: Run Node script
+        run: node index.js
 
-      - name: Run index.js
-      run: |
-     echo "----- START OUTPUT -----"
-     node index.js | tee /dev/stdout
-     echo "------ END OUTPUT ------"
