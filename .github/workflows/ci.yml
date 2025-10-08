@@ -19,5 +19,3 @@ jobs:
      echo "----- START OUTPUT -----"
      node index.js | tee /dev/stdout
      echo "------ END OUTPUT ------"
-
-
