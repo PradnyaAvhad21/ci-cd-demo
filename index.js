@@ -1,1 +1,1 @@
-console.log('Hello from CI/CD Demo 30th march!')
+console.log('Hello from CI/CD Demo 30thmarch!')
